@@ -19,6 +19,7 @@ while true; do
 
   echo "Select a project (or type 0 to exit):"
 
+  PS3="Which?: "
   select project in "${projects[@]}"; do
     if [[ "$REPLY" == "0" ]]; then
       echo "Exiting."
